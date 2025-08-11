@@ -8,6 +8,7 @@ Unlike classification or regression, clustering does not use labels — it group
 **Problem Type:** Unsupervised Machine Learning — Clustering  
 **Goal:** Identify distinct customer segments for targeted marketing strategies.
 
+![image alt](https://github.com/iamabdirazak/Customer-Segmentation/blob/main/customer_clustering%20_chart.png?raw=true)
 ---
 
 ## 🗂 Dataset
