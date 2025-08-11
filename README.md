@@ -5,10 +5,11 @@
 This project applies **unsupervised machine learning** techniques to segment mall customers into distinct groups based on their demographic and spending patterns.  
 Unlike classification or regression, clustering does not use labels — it groups similar customers together purely based on patterns in the data.
 
+![image alt](https://github.com/iamabdirazak/Customer-Segmentation/blob/main/customer_clustering%20_chart.png?raw=true)
+
 **Problem Type:** Unsupervised Machine Learning — Clustering  
 **Goal:** Identify distinct customer segments for targeted marketing strategies.
 
-![image alt](https://github.com/iamabdirazak/Customer-Segmentation/blob/main/customer_clustering%20_chart.png?raw=true)
 ---
 
 ## 🗂 Dataset
