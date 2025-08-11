@@ -93,6 +93,7 @@ _(Insert charts or reference images here)_
 ## 💡 Insights & Recommendations
 
 - _(Insert your business/marketing recommendations based on clusters here)_
+  ![Alt text](customer-clustering-chart.png)
 
 ---
 
