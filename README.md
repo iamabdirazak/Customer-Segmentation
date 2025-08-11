@@ -135,8 +135,8 @@ The Silhouette Score is used to evaluate the quality of clusters formed by a clu
 
 ## Author
 
-- Abdirazak Mubarak
+Abdirazak Mubarak
 
 ## Date
 
-- Aug 11, 2025
+Aug 11, 2025
