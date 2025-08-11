@@ -15,7 +15,7 @@ Unlike classification or regression, clustering does not use labels — it group
 ## 🗂 Dataset
 
 - **Source:** [Mall Customers Dataset on Kaggle](https://www.kaggle.com/datasets/singhmaninder/mall-customer-dataset)
-- **Size:** `XYZ` rows × `ABC` columns _(replace XYZ/ABC after inspection)_
+- **Size:** `198` rows × `9` columns
 - **Features:**
   - CustomerID _(removed for modeling)_
   - Gender _(categorical)_
@@ -45,7 +45,6 @@ Unlike classification or regression, clustering does not use labels — it group
    - Analyzed categorical distributions.
    - Explored relationships between features.
    - **Key EDA Observations:**
-     - _(Add insights from your notebook output here)_
 
 4. **Data Transformation**
 
@@ -53,12 +52,18 @@ Unlike classification or regression, clustering does not use labels — it group
    - Scaled numerical features using StandardScaler.
    - Ensured all features were numeric for clustering.
 
+   Scaling is crucial for clustering algorithms because they are sensitive to the scale of the data. If features are on different scales, those with larger ranges can disproportionately influence the distance calculations, leading to biased clustering results. Standardizing features ensures that each feature contributes equally to the distance metrics used in clustering algorithms like K-Means.
+
 5. **Feature Engineering**
 
    - Created new features (if applicable).
    - Justified each engineered feature based on dataset needs.
    - **New Feature(s) Added:**
-     - _(List and explain feature names here)_
+
+     - Income_Spending_Ratio: Annual Income/Spending Score
+     - Age Group: young, adult, midAge, senior
+
+     The new feature 'Income_Spending_Ratio' provides a more nuanced view of customer behavior by combining income and spending score. It helps identify customers who may have high income but low spending, or vice versa, which can be crucial for targeted marketing strategies and segmentation.
 
 6. **Modeling**
 
@@ -70,9 +75,13 @@ Unlike classification or regression, clustering does not use labels — it group
 
    - Computed **Silhouette Score**: _(Insert score here)_
    - Cluster profiles generated:
-     - **Cluster 0:** _(Insert characteristics)_
-     - **Cluster 1:** _(Insert characteristics)_
-     - **Cluster 2:** _(Insert characteristics)_
+     - **Cluster 0:** Low Income, Low Spending
+     - **Cluster 1:** High Income, High Spending
+     - **Cluster 2:** Medium Income, Medium Spending
+     - **Cluster 3:** Low Income, High Spending
+     - **Cluster 4:** High Income, Low Spending
+
+The Silhouette Score is used to evaluate the quality of clusters formed by a clustering algorithm. It measures how similar an object is to its own cluster compared to other clusters. The score ranges from -1 to 1, where a score close to 1 indicates that the object is well clustered, a score close to 0 indicates that the object is on or very close to the decision boundary between two neighboring clusters, and a score close to -1 indicates that the object may have been assigned to the wrong cluster. A higher Silhouette Score generally indicates better-defined clusters.
 
 8. **Model Saving**
    - Saved processed dataset as `mall_customers_clustered.csv`.
@@ -88,14 +97,11 @@ Unlike classification or regression, clustering does not use labels — it group
 - Spending Score distribution
 - Cluster visualizations in 2D space
 
-_(Insert charts or reference images here)_
-
 ---
 
 ## 💡 Insights & Recommendations
 
-- _(Insert your business/marketing recommendations based on clusters here)_
-  ![image Alt](customer_clustering_chart.png)
+![image alt](https://github.com/iamabdirazak/Customer-Segmentation/blob/main/customer_clustering%20_chart.png?raw=true)
 
 ---
 
@@ -127,5 +133,10 @@ _(Insert charts or reference images here)_
 
 ## 📅 Author & Date
 
-Author: Abdirazak Mubarak
-Date: Aug 11, 2025
+## Author
+
+- Abdirazak Mubarak
+
+## Date
+
+- Aug 11, 2025
